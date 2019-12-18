@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>SOM</title>
+		
+		<script language="JavaScript" type="text/javascript">
+			var cont = 3;
+			
+			window.onload = function() {
+				contador();
+			}
+			
+			function play() {
+				document.getElementById('divSom').innerHTML = "<embed type='application/x-mplayer2' src='despertador.mp3' height='0' width='0' autostart='1'";
+			}
+			
+			function stop() {
+				document.getElementById('divSom').innerHTML = "";
+			}
+			
+			function contador() {
+				var ss = cont;
+				var mm = parseInt(ss / 60);
+				
+				ss = ss - (mm * 60);
+								
+				if (mm < 10)
+					mm = '0' + mm;
+				
+				if (ss < 10)
+					ss = '0' + ss;
+				
+				document.getElementById('divCont').innerHTML = mm + ':' + ss;
+				
+				if (cont > 0) {
+					cont--;
+					setTimeout("contador()", 1000);
+				}
+				else {
+					document.getElementById('divCont').innerHTML += "<img src='cross.png' onclick='stop();'><img src='refresh.png' onclick='reiniciar();'>";
+					play();
+				}
+			}
+			
+			function reiniciar() {
+				stop();
+				cont = 7;
+				contador();
+			}
+		</script>
+	</head>
+	<body bgsound="teste.mid">
+		<div id="divSom"></div>		
+		<div id="divCont"></div>
+	</body>
+</html>

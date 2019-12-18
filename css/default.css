@@ -1,0 +1,202 @@
+html, body
+{
+	margin:0px;
+	height:100%;
+	padding:0;
+	overflow-x:hidden;
+}
+
+a
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color:#666;
+	text-decoration:underline;
+	cursor:pointer;
+}
+
+button
+{
+	background-image:url(../images/fundoBotao.gif);
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	height:20px;
+	border:#BBBBBB solid 1px;	
+	cursor:pointer;
+	text-align:center;
+	background-repeat:repeat-x;
+}
+
+label
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;				
+}
+
+.sitemap
+{
+	border-bottom:1 px solid #E3E3E3;
+	border-top: 1px solid #E3E3E3;
+	background-image:url(../images/fundoBotao.gif);
+	height:20px;
+	width:100%;
+}
+
+.mouseOver
+{
+	background-color:#E3E3E3;
+	cursor:pointer;
+	border:solid 1px;
+	border-color:#E3E3E3;	
+}
+
+.mouseOut
+{
+	background-color:#FFF;
+	cursor:pointer;
+	border:solid 1px;
+	border-color:#E3E3E3;
+}
+
+input
+{
+	border:solid #CCC 1px;
+	background-image:url(../images/fundoText.png);
+	background-repeat:repeat-x;
+}
+
+select
+{
+	border:solid #CCC 1px;
+}
+
+.tituloPagina
+{
+	/*background-color:#E3E3E3;*/
+	background-image:url(../images/fundoTitulo.png);	
+	border:solid 1px;
+	border-color:#E3E3E3;
+	margin-top:3px;
+	margin-left:156px;
+	margin-right:4px;
+	height:30px;
+	font-family: Helvetica,Verdana, Arial, sans-serif;
+	font-size: 17x;
+	text-align:center;
+	position:static;
+	background-repeat:repeat-x;
+}
+
+.basePagina
+{
+	background-color:#FFF;
+	border:solid 1px;
+	border-color:#E3E3E3;			
+	height:30px;	
+	font-family: Verdana,Arial, sans-serif ;
+	font-size:10px;
+	text-align:center;
+	bottom:0;
+	width:100%;
+	position:static;
+	background-image:url(../images/fundoTitulo.png);	
+	background-repeat:repeat-x;
+	
+}
+
+.divConteudo
+{
+	margin-left:155px;
+	overflow:auto;
+	height:445px;
+	margin-top:10px;
+	margin-left:10px;
+	margin-right:4px;
+}
+
+.geral 
+{
+	min-height:100%;	
+}
+
+.menu
+{
+	width:150px;
+	float:left;
+	margin-right:5px;
+	position:static;
+	/*border:solid 1px;
+	border-color:#E3E3E3;	*/
+	margin-right:10px;
+}
+
+.carregando
+{
+	position:fixed;
+	background-color:#f1f1f1;
+	top:2px;
+	left:2px;
+	width:150px;
+	height:25px;
+	display:none;
+}
+
+.cabecalhoRelatorio
+{
+	background-color:#E3E3E3;
+}
+
+.alternaRelatorio
+{
+	background-color:#f1f1f1;
+}
+
+.alternaPagina
+{
+	background-color:#f1f1f1;	
+}
+
+.fundoIndex
+{
+	background:url(../images/fundo.gif);
+	background-position:right;
+	background-repeat:no-repeat;
+	border-top:128px;
+}
+
+.topo{
+	height:128px;	
+}
+
+/*Portal - Principal*/
+.divPortalRight
+{
+	border:solid 1px;
+	border-color:#E3E3E3;
+	margin-left:1px;
+	background-color:#F9F9F9;
+}
+
+.divPortalLeft
+{	
+	border:solid 1px;
+	border-color:#E3E3E3;
+	margin-right:1px;
+	background-color:#F9F9F9;
+}
+
+.tituloItemPortal
+{
+	background:url(../images/fundoTituloPortal.png);
+	height:21px;
+	text-align:left;	
+}
+
+.divConteudoItemPortal
+{
+	margin-top:2px;
+	margin-left:3px;
+	height:175px;
+	overflow:auto;
+}
+/*Fim Portal - Principal*/
